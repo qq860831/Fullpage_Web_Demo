@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,9 +8,66 @@
     <!-- CSS -->
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./css/jquery.fullPage.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
-    
+    <div class="wrapper">
+        <!-- start header -->
+        <header class="header">
+            <div class="container">
+                <div class="navbar">
+                    <a href="#" class="navbar__logo"></a>
+                </div>
+                <div class="nav navbar__nav">
+                    <!-- A__B代表A裡面的B -->
+                    <ul class="menu nav__menu u-clearfix">  <!-- 因float的關係把高度吃掉需要清除浮動 -->
+                        <li><a href="#" class="menu__item">About</a></li>
+                        <li><a href="#" class="menu__item">Service</a></li>
+                        <li><a href="#" class="menu__item">Shop</a></li>
+                        <li><a href="#" class="menu__item">Contact</a></li>
+                    </ul>
+                    <div class="nav__icon-group">
+                        <a href="#" class="icon-btn">
+                            <i class="icon"></i>
+                        </a>
+                        <a href="#" class="icon-btn">
+                            <i class="icon"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- end header -->
+        <div id="fullpage">
+            <div class="section" data-anchor="firstPage">Some section</div>
+            <div class="section" data-anchor="secondPage">Some section</div>
+            <div class="section" data-anchor="thirdPage">Some section</div>
+            <div class="section" data-anchor="4thPage">Some section</div>
+            <div class="section" data-anchor="5thPage">Some section</div>
+        </div>
+        <!-- Side nav -->
+        <ul id="js-menu" class="side-nav">
+            <li data-menuanchor="firstPage" class="active"><a class="side-nav__item"
+                    href="#firstPage"><span>W</span></a></li>
+            <li data-menuanchor="secondPage"><a class="side-nav__item" href="#secondPage"><span>O</span></a></li>
+            <li data-menuanchor="thirdPage"><a class="side-nav__item" href="#thirdPage"><span>O</span></a></li>
+            <li data-menuanchor="4thPage"><a class="side-nav__item" href="#4thPage"><span>D</span></a></li>
+            <li data-menuanchor="5thPage"><a class="side-nav__item" href="#5thPage"><span>Y</span></a></li>
+        </ul>
+    </div>
+
+
+
+
+
+    <!-- JS -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery.fullpage.min.js"></script>
+    <script src="js/rellax.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/custom.js"></script>
 </body>
+
 </html>

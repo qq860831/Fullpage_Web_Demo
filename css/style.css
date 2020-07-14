@@ -12,6 +12,7 @@
 ---------------------------*/
 body{
 	font-family: 'Playfair Display', arial, sans-serif;
+	/* 前面的字型為主要的，後面則是替代字型 */
 }
 .wrapper{
 	background-color: #1c1c1c;
@@ -103,7 +104,7 @@ h1,h2,h3,h4,h5,h6,p{
 	}
 }
 .side-nav__item{
-	display: inline-block;
+	display: inline-block;  /* 因為有a連結，所以要寫掉原來inline的預設 */
 	color: #fff;
 	font-size: 18px;
 	width: 160px;
@@ -169,7 +170,7 @@ h1,h2,h3,h4,h5,h6,p{
 	display: inline-block;
 	width: 144px;
 	height: 144px;
-	background: url('../images/logo.png') #dcb677;
+	background: url('../img/logo.png') #dcb677;
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 80px;
