@@ -4,14 +4,14 @@ $(document).ready(function() {
 	$('#fullpage').fullpage({
 		anchors:['firstPage', 'secondPage', 'thirdPage', '4thPage', '5thPage'],
 		menu: '#js-menu',
-		autoScrolling: false,
+		autoScrolling: false, //自動抓取距離關掉
 		fitToSection: false,
 		scrollingSpeed: 1200
 	});
 
 	// logo change when scroll
 	$(window).on('scroll',function(){
-		var scrollDistance = $(window).scrollTop();
+		var scrollDistance = $(window).scrollTop(); //取得滾動距離
 		var $header = $(".js-header");
 		if(scrollDistance > 80){
 			$header.addClass("header--scrolling");
@@ -21,10 +21,11 @@ $(document).ready(function() {
 		}
 	})
 
-	// rellax initialization
+	// rellax initialization(視差滾動)
 	if(screen.width > 768){
 		var rellax = new Rellax('.rellax',{
 			center: true
+			// 把視差滾動的基準線定位在中間
 		});
 	}
 		

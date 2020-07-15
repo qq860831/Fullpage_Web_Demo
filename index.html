@@ -9,17 +9,23 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/layout.css">
     <link rel="stylesheet" href="./css/jquery.fullPage.css">
+    <link rel="stylesheet" href="./css/OwlCarousel2-2.2.1/owl.carousel.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
     <div class="wrapper">
         <!-- start header -->
-        <header class="header">
+        <header class="header js-header">
             <div class="container">
-                <div class="navbar u-clearfix">
+                <div class="navbar navbar--collapse u-clearfix">
                     <a href="#" class="navbar__logo"></a>
-                    <div class="nav navbar__nav u-clearfix">
+                    <a href="#"class="menu-toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </a>
+                    <div class="nav navbar__nav popup-nav u-clearfix">
                         <!-- A__B代表A裡面的B -->
                         <ul class="menu nav__menu u-clearfix">
                             <!-- 因float的關係把高度吃掉需要清除浮動 -->
@@ -45,10 +51,12 @@
             <!-- start hero -->
             <div class="section hero hero--bg-covered" data-anchor="firstPage">
                 <div class="container">
-                    <h1 class="heading">
-                        We tell<br>the story about wood
-                    </h1>
-                    <a href="#" class="btn">BUY IT NOW</a>
+                    <div class="rellax" data-rellax-speed="-4">
+                        <h1 class="heading">
+                            We tell<br>the story about wood
+                        </h1>
+                        <a href="#" class="btn">BUY IT NOW</a>
+                    </div>
                 </div>
                 <a href="secondPage" class="scrolldown-btn"></a>
             </div>
@@ -69,6 +77,15 @@
                                     and out, in and out.” <br><br>Delivering food requires military precision: Bananas
                                     canʼt get cold. Produce canʼt get warm. Eggs, of course, must not get broken. And
                                     people expect their food to arrive at specific times.</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-2 col-sm-push-2">
+                            <div class="parallax-container parallax-container-about">
+                                <div class="frame">
+                                    <div class="frame__inner rellax" data-rellax-speed="4">
+                                    </div>
+                                </div>
+                                <img class="image rellax" data-rellax-speed="2" src="./img/about.png" alt="">
                             </div>
                         </div>
                     </div>
@@ -94,6 +111,15 @@
                                 <a href="#" class="btn info__btn">BOOKING</a>
                             </div>
                         </div>
+                        <div class="col-sm-6 col-sm-pull-4">
+                            <div class="parallax-container parallax-container-service">
+                                <img class="image rellax" data-rellax-speed="2" src="./img/service.png" alt="">
+                                <div class="frame">
+                                    <div class="frame__inner rellax" data-rellax-speed="7">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -106,62 +132,62 @@
                         <h2 class="info__title">Y.S Studio Shop</h2>
                         <h3 class="info__subtitle">Got a special one for you!</h3>
                     </div>
-                    <div class="thumbnails">
-                        <div class="row">
-                            <div class="col-sm-3">
-                                <div class="thumbnail">
-                                    <div class="thumbnail__imgbox">
-                                        <img src="img/shop001.png" alt="" class="image">
-                                    </div>
-                                    <a href="#">
-                                        <h5 class="thumbnail__title">Title</h5>
-                                    </a>
-                                    <p class="thumnail__text">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, doloremque!
-                                    </p>
-                                </div>
+                    <div class="thumbnails owl-carousel">
+                        <div class="thumbnail">
+                            <div class="thumbnail__imgbox">
+                                <img src="img/shop001.png" alt="" class="image">
                             </div>
-                            <div class="col-sm-3">
-                                <div class="thumbnail">
-                                    <div class="thumbnail__imgbox">
-                                        <img src="img/shop001.png" alt="" class="image">
-                                    </div>
-                                    <a href="#">
-                                        <h5 class="thumbnail__title">Title</h5>
-                                    </a>
-                                    <p class="thumnail__text">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, doloremque!
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="col-sm-3">
-                                <div class="thumbnail">
-                                    <div class="thumbnail__imgbox">
-                                        <img src="img/shop001.png" alt="" class="image">
-                                    </div>
-                                    <a href="#">
-                                        <h5 class="thumbnail__title">Title</h5>
-                                    </a>
-                                    <p class="thumnail__text">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, doloremque!
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="col-sm-3">
-                                <div class="thumbnail">
-                                    <div class="thumbnail__imgbox">
-                                        <img src="img/shop001.png" alt="" class="image">
-                                    </div>
-                                    <a href="#">
-                                        <h5 class="thumbnail__title">Title</h5>
-                                    </a>
-                                    <p class="thumnail__text">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, doloremque!
-                                    </p>
-                                </div>
-                            </div>
+                            <a href="#">
+                                <h5 class="thumbnail__title">Title</h5>
+                            </a>
+                            <p class="thumnail__text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, doloremque!
+                            </p>
                         </div>
-
+                        <div class="thumbnail">
+                            <div class="thumbnail__imgbox">
+                                <img src="img/shop001.png" alt="" class="image">
+                            </div>
+                            <a href="#">
+                                <h5 class="thumbnail__title">Title</h5>
+                            </a>
+                            <p class="thumnail__text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, doloremque!
+                            </p>
+                        </div>
+                        <div class="thumbnail">
+                            <div class="thumbnail__imgbox">
+                                <img src="img/shop001.png" alt="" class="image">
+                            </div>
+                            <a href="#">
+                                <h5 class="thumbnail__title">Title</h5>
+                            </a>
+                            <p class="thumnail__text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, doloremque!
+                            </p>
+                        </div>
+                        <div class="thumbnail">
+                            <div class="thumbnail__imgbox">
+                                <img src="img/shop001.png" alt="" class="image">
+                            </div>
+                            <a href="#">
+                                <h5 class="thumbnail__title">Title</h5>
+                            </a>
+                            <p class="thumnail__text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, doloremque!
+                            </p>
+                        </div>
+                        <div class="thumbnail">
+                            <div class="thumbnail__imgbox">
+                                <img src="img/shop001.png" alt="" class="image">
+                            </div>
+                            <a href="#">
+                                <h5 class="thumbnail__title">Title</h5>
+                            </a>
+                            <p class="thumnail__text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, doloremque!
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -194,6 +220,15 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="col-sm-6">
+                            <div class="parallax-container parallax-container-contact">
+                                <div class="frame">
+                                    <div class="frame__inner rellax" data-rellax-speed="7">
+                                    </div>
+                                </div>
+                                <img class="image rellax" data-rellax-speed="2" src="./img/contact.png" alt="">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -208,51 +243,50 @@
                         <div class="row">
                             <div class="col-sm-2">
                                 <ul class="list">
-									<li><a href="#secondPage" class="list__link">About</a></li>
-									<li><a href="#thirdPage" class="list__link">Service</a></li>
-									<li><a href="#4thPage" class="list__link">Shop</a></li>
-									<li><a href="#5thPage" class="list__link">Contact</a></li>
-								</ul>
+                                    <li><a href="#secondPage" class="list__link">About</a></li>
+                                    <li><a href="#thirdPage" class="list__link">Service</a></li>
+                                    <li><a href="#4thPage" class="list__link">Shop</a></li>
+                                    <li><a href="#5thPage" class="list__link">Contact</a></li>
+                                </ul>
                             </div>
                             <div class="col-sm-2">
                                 <ul class="list">
                                     <!-- target=_blank代表要連結外站開啟新的分頁 -->
-									<li><a href="#" class="list__link" target="_blank">FAQ</a></li>
-									<li><a href="#thirdPage" class="list__link" target="_blank">Order</a></li>
-									<li><a href="#4thPage" class="list__link" target="_blank">Our Work</a></li>
-								</ul>
+                                    <li><a href="#" class="list__link" target="_blank">FAQ</a></li>
+                                    <li><a href="#thirdPage" class="list__link" target="_blank">Order</a></li>
+                                    <li><a href="#4thPage" class="list__link" target="_blank">Our Work</a></li>
+                                </ul>
                             </div>
                             <div class="col-sm-4">
                                 <div class="contact">
-									<div class="contact__item">
-										<h5 class="contact__label">Email</h5>
-										<a href="#" class="contact__link">WALNUT.M@service.com</a>
-									</div>
-									<div class="contact__item">
-										<h5 class="contact__label">Tel</h5>
-										<a href="#" class="contact__link">(417) 530-7490 +886 45692 13256</a>
-									</div>
-									<div class="contact__item">
-										<h5 class="contact__label">Address</h5>
-										<a href="#" class="contact__link">Louisburg, MO 65685, 3814 Doty Way</a>
-									</div>
-								</div>
+                                    <div class="contact__item">
+                                        <h5 class="contact__label">Email</h5>
+                                        <a href="#" class="contact__link">WALNUT.M@service.com</a>
+                                    </div>
+                                    <div class="contact__item">
+                                        <h5 class="contact__label">Tel</h5>
+                                        <a href="#" class="contact__link">(417) 530-7490 +886 45692 13256</a>
+                                    </div>
+                                    <div class="contact__item">
+                                        <h5 class="contact__label">Address</h5>
+                                        <a href="#" class="contact__link">Louisburg, MO 65685, 3814 Doty Way</a>
+                                    </div>
+                                </div>
                             </div>
                             <div class="col-sm-4">
                                 <div class="footer__icon-group">
-									<a href="#" class="icon-btn">
+                                    <a href="#" class="icon-btn">
                                         <i class="icon icon-fb"></i>
                                         <!-- 下面a連結的右括號放到下一行是為了消除間隙 -->
-                                    </a
-									><a href="#" class="icon-btn">
-										<i class="icon icon-ig"></i>
-									</a>
-								</div>
+                                    </a><a href="#" class="icon-btn">
+                                        <i class="icon icon-ig"></i>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                         <div class="copyright">
-							<p>Copyright © 2017 WALNUT.M Y.S. STUDIO</p>
-						</div>
+                            <p>Copyright © 2017 WALNUT.M Y.S. STUDIO</p>
+                        </div>
                     </div>
                 </div>
             </div>
