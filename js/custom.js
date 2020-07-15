@@ -5,7 +5,7 @@ $(document).ready(function() {
 		anchors:['firstPage', 'secondPage', 'thirdPage', '4thPage', '5thPage'],
 		menu: '#js-menu',
 		autoScrolling: false, //自動抓取距離關掉
-		fitToSection: false,
+		fitToSection: false, //取消插件自動幫你抓的section(手機體驗上)
 		scrollingSpeed: 1200
 	});
 

@@ -140,6 +140,7 @@ h1,h2,h3,h4,h5,h6,p{
 /* $Layout
 ---------------------------*/
 .section__inner{
+	/* 為了在小螢幕上section有距離 */
 	padding-top: 80px;
 	padding-bottom: 80px;
 }
