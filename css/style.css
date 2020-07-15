@@ -40,17 +40,17 @@ h1,h2,h3,h4,h5,h6,p{
 ---------------------------*/
 .icon{
 	display: inline-block;
-	vertical-align: middle;
+	vertical-align: middle; /* 消除掉inline-block多出來的部分 */
 	width: 24px;
 	height: 24px;
 	background-size: cover;
 	background-position: center;
 }
 .icon-fb{
-	background-image: url('../images/facebook1.svg');
+	background-image: url('../img/facebook1.svg');
 }
 .icon-ig{
-	background-image: url('../images/ig2.svg');
+	background-image: url('../img/ig2.svg');
 }
 /*-------------------------*/
 /* $Button
@@ -73,7 +73,8 @@ h1,h2,h3,h4,h5,h6,p{
 	outline: none;
 	cursor: pointer;
 	overflow: hidden;
-	user-select: none;
+	user-select: none; 
+	/* 使用者不會按到而反白導致體驗不好 */
 	user-drag: none;
 	transition: all 0.3s;
 }
@@ -222,6 +223,7 @@ h1,h2,h3,h4,h5,h6,p{
 	margin-right: 16px;
 }
 .nav__icon-group .icon-btn:last-child{
+	/* 利用子代選擇器把最後一個icon跟邊界的距離消除 */
 	margin: 0;
 }
 /* menu-toggle */
@@ -311,7 +313,7 @@ h1,h2,h3,h4,h5,h6,p{
 /* $Hero
 ---------------------------*/
 .hero--bg-covered{
-	background-image: url('../images/hero_bg.png');
+	background-image: url('../img/hero_bg.png');
 	background-size: cover;
 	background-position: center;
 }
@@ -334,11 +336,12 @@ h1,h2,h3,h4,h5,h6,p{
 	bottom: 24px;
 	left: 50%;
 	transform: translateX(-50%);
-	background-image: url('../images/arrow.svg');
+	background-image: url('../img/arrow.svg');
 	background-size: 16px;
 	background-repeat: no-repeat;
 	background-position: center;
-	animation: breath 2s infinite;
+	animation: breath 2s infinite; /* infinite 無限循環 */
+	
 }
 @keyframes breath{
 	0%{opacity: 0.5;}
@@ -361,6 +364,7 @@ h1,h2,h3,h4,h5,h6,p{
 	padding-bottom: 24px;
 }
 .info__subtitle:before{
+	/* 文字下方的長條橫槓 */
 	content: "";
 	position: absolute;
 	bottom: 0;
@@ -410,6 +414,7 @@ h1,h2,h3,h4,h5,h6,p{
 .thumbnail__imgbox{
 	width: 100%;
 	padding-top: calc(100% * 9 / 16);
+	/* calc(計算紙)直接自訂出寬高 */
 	margin-bottom: 8px;
 }
 .thumbnail__imgbox .image{
@@ -417,8 +422,10 @@ h1,h2,h3,h4,h5,h6,p{
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%,-50%);
+	/* 直接利用絕對定位把圖放中間 */
 	max-width: 100%;
 	max-height: 100%;
+	/* 圖片撐滿最大寬高 */
 }
 /* owl-carousel */
 .owl-nav{
@@ -479,7 +486,7 @@ h1,h2,h3,h4,h5,h6,p{
 	display: block;
 	width: 96px;
 	height: 40px;
-	background-image: url('../images/footer_logo.svg');
+	background-image: url('../img/footer_logo.svg');
 	background-position: -9px center;	
 	background-size: cover;
 	margin-bottom: 8px;
